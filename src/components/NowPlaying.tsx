@@ -28,7 +28,6 @@ export default function NowPlaying({
   const volBars = Math.round(volume / 10);
   const barWidth = Math.max(20, terminalWidth - 22);
 
-  console.log(item?.album.images[0].url);
 
   return (
     <Box

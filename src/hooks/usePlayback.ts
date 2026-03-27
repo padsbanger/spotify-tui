@@ -18,7 +18,6 @@ export function usePlayback(
   const refresh = useCallback(async () => {
     try {
       const state = await api.getPlaybackState();
-      console.log(state);
       setPlayback(state);
       setError(null);
     } catch (err) {
